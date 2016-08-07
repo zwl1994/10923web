@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>JspExam</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+		<servlet-name>checkServlet</servlet-name>
+		<servlet-class>com.hand.servlet.checkServlet</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>FilmServlet</servlet-name>
+    <servlet-class>com.hand.servlet.FilmServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewFileServlet</servlet-name>
+    <servlet-class>com.hand.servlet.NewFileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteServlet</servlet-name>
+    <servlet-class>com.hand.servlet.deleteServlet</servlet-class>
+  </servlet>
+
+
+	
+	<servlet-mapping>
+		<servlet-name>checkServlet</servlet-name>
+		<url-pattern>/checkServlet</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FilmServlet</servlet-name>
+    <url-pattern>/filmservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewFileServlet</servlet-name>
+    <url-pattern>/newfilmservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteServlet</servlet-name>
+    <url-pattern>/deleteservlet</url-pattern>
+  </servlet-mapping>
+  
+  </web-app>
